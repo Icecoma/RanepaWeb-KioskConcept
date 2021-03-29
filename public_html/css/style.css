@@ -1,0 +1,100 @@
+a {
+    color: #951a1d;
+}
+
+.mdl-layout__header {
+    color: #951a1d;
+}
+
+.mdl-layout__drawer-button {
+    color: #951a1d;
+}
+
+.mdl-layout__drawer {
+    width: 340px;
+    transform: translateX(-350px);
+}
+
+.mdl-layout__header-row .mdl-layout-title {
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.mdl-layout__drawer .mdl-layout-title {
+    background-image: url(../images/logo.png);
+    display: block;
+    height: 100px;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.mdl-layout__drawer .mdl-navigation__link {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.mdl-layout__drawer .mdl-navigation__link:hover {
+    background: #951a1d !important;
+    color: white;
+}
+
+.mdl-layout__content .content {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.item-field .material-icons {
+    position: absolute;
+    right: 6px;
+    top: 32px;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.is-focused .mdl-textfield__label, .is-dirty .mdl-textfield__label {
+    color: #951a1d !important;
+}
+
+
+.is-focused {
+
+}
+
+.depend{
+    display: none;
+    position: relative;
+}
+
+.full-width {
+    width: 100%;
+}
+
+#search, #send {
+    float: right;
+}
+
+.mdl-button--raised.mdl-button--colored {
+    background-color: #951a1d;
+}
+
+#found-container {
+    margin-bottom: 300px;
+}
+
+#keyboard {
+    position: fixed;
+
+    bottom: 0;
+    background-color: #333;
+    z-index: 100;
+    width: 100%;
+    display: none;
+}
+
+.jkey {
+    background-color: #951a1d !important;
+    border: none !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12) !important;
+}

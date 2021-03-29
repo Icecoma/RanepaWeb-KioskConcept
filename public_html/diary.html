@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Нижегородский институт управления - Электронный дневник</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/diary.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        
+        <link rel="stylesheet" href="js/keyboard/css/jkeyboard.css">
+        <script src="js/keyboard/js/jkeyboard.js"></script>
+        
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            #found td, #found th {
+                text-align: left;
+            }
+        </style>
+    </head>
+    
+    <body>
+
+        <div class="mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header mdl-layout__header--transparent">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">Нижегородский институт управления - Электронный дневник</span>
+                    <div class="mdl-layout-spacer"></div>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title"></span>
+                <nav class="mdl-navigation">
+
+                    <a class="mdl-navigation__link" href="/">Главная</a>
+                    <a class="mdl-navigation__link" href="/shedule.html">Расписание</a>
+                    <a class="mdl-navigation__link" href="/diary.html">Дневник</a>
+                    <a class="mdl-navigation__link" href="/order.html">Заказ справок</a>
+
+                </nav>
+            </div>
+
+            <div class="mdl-layout__content">
+                <div class="content">
+                    <form action="#">
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width item-field">
+                            <input class="mdl-textfield__input full-width" type="text" id="gradebook" style="height: 40px" autocomplete="off">
+                            <label class="mdl-textfield__label" for="gradebook">Номер зачетной книжки</label>
+                            <i class="material-icons" id="clear_gradebook">cancel</i>
+                        </div>
+
+                        <div style="padding-bottom: 20px;">
+                            <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" id="found-container" style="width: 100%">
+                                <tbody id="found"></tbody>
+                            </table>
+                        </div>
+
+                        <button id="search" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="margin-bottom: 20px;">
+                            Поиск
+                        </button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        
+       
+        
+    </body>
+</html>

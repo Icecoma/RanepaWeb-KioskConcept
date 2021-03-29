@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Нижегородский институт управления - Заказ справок</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/order.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+
+        <div class="mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header mdl-layout__header--transparent">
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">Нижегородский институт управления - Заказ справок</span>
+                    <div class="mdl-layout-spacer"></div>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title"></span>
+                <nav class="mdl-navigation">
+
+                    <a class="mdl-navigation__link" href="/">Главная</a>
+                    <a class="mdl-navigation__link" href="/shedule.html">Расписание</a>
+                    <a class="mdl-navigation__link" href="/diary.html">Дневник</a>
+                    <a class="mdl-navigation__link" href="/order.html">Заказ справок</a>
+
+                </nav>
+            </div>
+
+            <div class="mdl-layout__content">
+                <div class="content">
+                    <form action="#">
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width item-field">
+                            <input class="mdl-textfield__input full-width" type="text" id="gradebook" style="height: 40px" autocomplete="off">
+                            <label class="mdl-textfield__label" for="gradebook">Номер зачетной книжки</label>
+                        </div>
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width item-field">
+                            <select class="mdl-textfield__input full-width" id="typecertificate" style="height: 40px" autocomplete="off">
+                                <option>По месту требования</option>
+                                <option>О размере стипендии</option>
+                                <option>О размере иных выплат</option>
+
+                            </select>
+                            <label class="mdl-textfield__label" for="typecertificate">Тип справки</label>
+                        </div>
+                        
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width item-field">
+                            <select class="mdl-textfield__input full-width" id="placecert" style="height: 40px" autocomplete="off">
+                                <option value="2">Пенсионный фонд</option>
+                                <option value="3">Социальная защита</option>
+                                <option value="4">Отдел жилищных субсидий</option>
+                                <option value="5">Банк</option>
+                                <option value="6">ИФНС</option>
+                                <option value="7">Место работы</option>
+                                <option value="8">Место работы родителей</option>
+                                <option value="9">Налоговая инспекция</option>
+                                <option value="10">Российские железные дороги</option>
+                                <option value="11">Касса автовокзала</option>
+                                <option value="12">Жилищно-коммунальное хозяйство</option>
+                                <option value="13">Паспортно-визовая служба</option>
+                                <option value="14">Паспортный стол</option>
+                                <option value="15">Иное место предоставления</option>
+                               
+                            </select>
+                            <label class="mdl-textfield__label" for="placecert">Место предоставления</label>
+                        </div>
+                        
+                        <div class="depend mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width item-field">
+                            <input class="mdl-textfield__input full-width" type="text" id="niudata" style="height: 40px" autocomplete="off">
+                            <label class="mdl-textfield__label" for="niudata">Наименование организации</label>
+                        </div>
+                        
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width item-field">
+                            <input class="mdl-textfield__input full-width" type="text" id="kol" style="height: 40px" autocomplete="off">
+                            <label class="mdl-textfield__label" for="kol">Количество экземпляров</label>
+                        </div>
+                        
+                        <button id="send" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="margin-bottom: 20px;">
+                            Подать заявку
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

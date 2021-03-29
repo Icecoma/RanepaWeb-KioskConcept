@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Нижегородский институт управления - Расписание</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/shedule.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="js/keyboard/css/jkeyboard.css">
+        <script src="js/keyboard/js/jkeyboard.js"></script>
+    </head>
+    
+    <body>
+
+        <div class="mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Нижегородский институт управления - Расписание</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title"></span>
+        <nav class="mdl-navigation">
+            
+            <a class="mdl-navigation__link" href="/">Главная</a>
+            <a class="mdl-navigation__link" href="/shedule.html">Расписание</a>
+            <a class="mdl-navigation__link" href="/diary.html">Дневник</a>
+            <a class="mdl-navigation__link" href="/order.html">Заказ справок</a>
+                        
+        </nav>
+    </div>
+    
+    <div class="mdl-layout__content">
+        <div class="content">
+        <form action="#">
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width item-field" style="width: 48%; float: left">
+                <input class="mdl-textfield__input full-width" type="date" id="date_start" style="height: 40px">
+                <label class="mdl-textfield__label" for="date_start" style="text-align: right">Начало периода</label>
+            </div>
+            
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width item-field" style="width: 48%; margin-left: 4%">
+                <input class="mdl-textfield__input full-width" type="date" id="date_end" style="height: 40px">
+                <label class="mdl-textfield__label" for="date_end" style="text-align: right">Конец периода</label>
+            </div>
+            
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width item-field">
+                <input class="mdl-textfield__input full-width" type="text" id="teacher_or_group_name" style="height: 40px" autocomplete="off">
+                <label class="mdl-textfield__label" for="teacher_or_group_name">ФИО преподавателя или название группы</label>
+                <i class="material-icons" id="clear_teacher">cancel</i>
+            </div>
+            
+            <div style="padding-bottom: 20px;">
+                <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="width: 100%">
+                    <tbody id="found"></tbody>
+                </table>
+            </div>
+            
+            <button id="search" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="margin-bottom: 20px;">
+                Поиск
+            </button>
+</form>
+        
+        
+        
+        
+        </div>
+    </div>
+
+</div>
+        
+        
+    </body>
+</html>
